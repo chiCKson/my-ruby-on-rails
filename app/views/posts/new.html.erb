@@ -1,0 +1,25 @@
+<h1>Add Posts</h1>
+<table>
+<%= form_for :post,url: posts_path do |f|%>
+<tr>
+<td>
+<%= f.label :title%>
+</td>
+<td>
+<%= f.text_field :title%>
+</td>
+</tr>
+<tr>
+<td>
+<%= f.label :body%>
+</td>
+<td>
+<%= f.text_area :body%>
+</td>
+</tr>
+<tr><td></td>
+<td>
+<%= f.submit%>
+</td></tr>
+</table>
+<%end%>
